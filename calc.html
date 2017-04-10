@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<form name="calculator">
+		<input type="text" name="answerBox"/>
+		<br />
+		<input type="button" value=" 1 " onclick="calculator.answerBox.value += '1'"/>
+		<input type="button" value=" 2 " onclick="calculator.answerBox.value += '2'"/>
+		<input type="button" value=" 3 " onclick="calculator.answerBox.value += '3'"/>
+		<input type="button" value=" + " onclick="calculator.answerBox.value += '+'"/>
+		<br />
+
+		<input type="button" value=" 4 " onclick="calculator.answerBox.value += '4'"/>
+		<input type="button" value=" 5 " onclick="calculator.answerBox.value += '5'"/>
+		<input type="button" value=" 6 " onclick="calculator.answerBox.value += '6'"/>
+		<input type="button" value=" - " onclick="calculator.answerBox.value += '-'"/>
+		<br />
+
+		<input type="button" value=" 7 " onclick="calculator.answerBox.value += '7'"/>
+		<input type="button" value=" 8 " onclick="calculator.answerBox.value += '8'"/>
+		<input type="button" value=" 9 " onclick="calculator.answerBox.value += '9'"/>
+		<input type="button" value=" * " onclick="calculator.answerBox.value += '*"/>
+		<br />
+
+		<input type="button" value=" c " onclick="calculator.answerBox.value = ''"/>
+		<input type="button" value=" 0 " onclick="calculator.answerBox.value += '0'"/>
+		<input type="button" value=" = " onclick="calculator.answerBox.value = eval(calculator.answerBox.value)"/>
+		<input type="button" value=" / " onclick="calculator.answerBox.value += '/'"/>
+		<br />
+		</form>
+	</div>
+
+</body>
+</html>
